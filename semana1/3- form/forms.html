@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>User Form</h1>
+    <form action="save.php" method="get">
+        <div>   
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <nav>Age:</nav>
+            <input type="radio" id="age1" name="age" value="&lt18">18-<br>          
+            <input type="radio" id="age2" name="age" value="19-35">19-35<br>
+            <input type="radio" id="age3" name="age" value="36-48">36-48<br>
+            <input type="radio" id="age4" name="age" value="&gt49">50+<br>
+        </div>
+        <div>
+            <label for="profession">Profession:</label>
+            <input list="professions" id="profession" name="profession">
+            <datalist id="professions">
+                <option value="Engineer">
+                <option value="Teacher">
+                <option value="Doctor">
+                <option value="Artist">
+            </datalist>
+        </div>
+        <div>
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">Select Country:</option>
+                <option value="USA">United States</option>
+                <option value="UK">United Kingdom</option>
+                <option value="Canada">Canada</option>
+                <option value="Australia">Australia</option>
+                <option value="Germany">Germany</option>
+                <option value="France">France</option>
+            </select>
+        </div>
+        <div>
+            Interests:<br>
+            <input type="checkbox" id="interests1" name="insterests" value="Sports">
+            <label for="interests1">Sports</label><br>
+            <input type="checkbox" id="interest2" name="interests" value="Music">
+            <label for="interest2">Music</label><br>
+            <input type="checkbox" id="interest3" name="interests" value="Travel">
+            <label for="interest3">Travel</label><br>
+            <input type="checkbox" id="interest4" name="interests" value="Reading">
+            <label for="interest4">Reading</label><br>
+        </div>
+        <div>
+            How did you find about this site?<br>
+            <textarea id="referrer" name="referrer" rows="4" cols="50"></textarea>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
