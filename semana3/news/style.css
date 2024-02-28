@@ -85,11 +85,11 @@ article a{
     text-decoration: none;  
     
 }
-h2, h1{
+h2,h1{
     font-family: "Poppins", sans-serif;
 }
 
-#news h1{
+#news header > h1{
     position: absolute;
     text-shadow: 3px 3px 3px black;
     padding-left: 20px;
