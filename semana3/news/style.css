@@ -2,16 +2,15 @@
 @import url('https://fonts.googleapis.com/css?family=Lora:400,700|Poppins:300,200');
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 /*headers*/
-
-header{
-    background-color: #046DD5;
-    font-family: "Poppins";
-    
+:root{
+    width: 100%;
 }
+
 body > header a{
     color: white;
     text-decoration: none;
     padding-left:10px ;
+    
 }
 header h1{
     margin: 0;

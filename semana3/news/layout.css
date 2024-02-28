@@ -1,6 +1,5 @@
 body{
     background-color: #EDEFF0;
-    width: 60em;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 4fr 1fr;
@@ -8,7 +7,17 @@ body{
                        "menu  side"
                        "content  side"
                        "footer  side";
+
 }
+
+body > header {
+    background-color: #046DD5;
+    font-family: "Poppins";
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+}
+
 
 #related{
     grid-area: side;
@@ -32,6 +41,7 @@ body > header{
     flex-direction: column;
 }
 #signup{
+    display: flex;
     justify-content: flex-end;
 }
 footer{
@@ -39,6 +49,7 @@ footer{
     margin-bottom: 1em;
 }
 #news{
+    grid-area: content;
     background-color: white;
 }
 body > footer{

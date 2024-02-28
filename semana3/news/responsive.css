@@ -1,0 +1,101 @@
+@media screen and (max-width: 60em) {
+    #related {
+        display: none;
+    }
+    body {
+        grid-template-columns: 1fr; /* Altere para uma única coluna */
+        grid-template-areas: 
+          "header"
+          "menu"
+          "content"
+          "footer";
+    }
+}
+
+@media screen and (max-width: 40em) {
+    article > header> h1 {
+        max-width: 100%;
+    }
+    header h2 {
+        display: none;
+    }
+    #menu ul li:hover a {
+        color: white;
+    }
+    #menu li:hover{
+        background-color: #2A2F33;
+        color: white;
+    }
+
+    #news h1{
+        position: relative;
+        text-shadow: none;
+        max-width: 30em;
+        font-size: 1.3em;
+        margin: 1em 0;
+    }
+    article a{
+        color: black;
+    }
+    
+    #menu ul {
+        display: none;
+        
+    }
+    #menu ul li{
+        border-top: none;
+        text-align: left;
+        padding: 0.5em;
+        
+    }
+    
+    #menu ul li:nth-child(1) { 
+        border-left: 0.3em solid #E1493E;
+        border-top: none;
+    }
+    #menu ul li:nth-child(2) { 
+        border-left: 0.3em solid #8ABA56;
+        border-top: none;
+    }
+    #menu ul li:nth-child(3) { 
+        border-left: 0.3em solid #5B4282;
+        border-top: none;
+    }
+    #menu ul li:nth-child(4) { 
+        border-left: 0.3em solid #FF8932;
+        border-top: none;
+    }
+    #menu ul li:nth-child(5) { 
+        border-left: 0.3em solid #19B6E9;
+        border-top: none;
+    }
+    #menu ul li:nth-child(6) {
+        border-left: 0.3em solid #E84C8B;
+        border-top: none;
+    }
+    
+    
+    #menu {
+        position: relative;
+    }
+
+    #menu label {
+        display: block;
+        background-color: #333;
+        color: white;
+        text-align: left;
+        padding: 1em;
+    }
+    #hamburger:checked ~ ul {
+        display: block; 
+    }
+    .hamburger {
+       display: block; 
+    }
+    .hamburger:before {
+        content: "\2630"; 
+    }
+    .close-menu:before {
+        content: "\2715"; 
+    }
+}
