@@ -30,28 +30,44 @@
   
 }
 
+/* form{
+  background-color: #f0f0f0;
+  padding: 1em;
+  flex-grow: 3;      
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+
+}
+input[type="text"],input[type="email"]{
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+} */
+
+
 form{
   background-color: #f0f0f0;
   padding: 1em;
-  display: block;
-  
-  
-                  
+               
 }
 input[type="text"],input[type="email"]{
-  padding: 0.7em;
-  width: 44%;
-  border-color: black;
-  margin-bottom: 1em;
   
+  width: calc(46% - 1em); 
+  border-color: black;
+  display: inline 
 }
 
 textarea{
+  margin-top: 1em;
   width: 94.5%;
   height: 10em;
+  display: inline-block;
   vertical-align:middle;
+  
 }
-button{
+
+form >button{
   padding: 0.7em;
   background-color: black;
   color: white;
@@ -59,9 +75,14 @@ button{
   margin: 1em 0;
   cursor: pointer;
   display: block;
+  margin-left: auto;
   width: 15%;
   font-size: 1.2em;
   text-align: center;
-  float: right;
   
+  
+}
+
+button:hover{
+  background-color: #333;
 }
