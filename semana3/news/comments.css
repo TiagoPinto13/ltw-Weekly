@@ -1,63 +1,67 @@
 #comments {
-    margin-top: 20px;
-  }
+  padding: 1em;
+}
+
+#comments h1 {
+  font-size: 1.5em;
+}
+
+
+.comment .user::after {
+  content: " said:";
   
-  #comments h1 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    position: relative;
-  }
+}
+
+.comment .date {
+  float: right;
+}
+
+
+.comment p::before {
+  content: "\201C";
+  color: gainsboro;
+  vertical-align: -0.7em;
+  font-size: 1.5em;
   
-  .comment {
-    margin-bottom: 20px;
-  }
+}
+.comment p {
+  background-color: #f0f0f0;
+  margin-bottom: 1em;
   
-  .comment .user {
-    font-weight: bold;
-  }
+}
+
+form{
+  background-color: #f0f0f0;
+  padding: 1em;
+  display: block;
   
-  .comment .date {
-    margin-left: 10px;
-    color: #999;
-  }
   
-  .comment p {
-    margin-top: 5px;
-  }
+                  
+}
+input[type="text"],input[type="email"]{
+  padding: 0.7em;
+  width: 44%;
+  border-color: black;
+  margin-bottom: 1em;
   
-  form {
-    margin-top: 30px;
-  }
+}
+
+textarea{
+  width: 94.5%;
+  height: 10em;
+  vertical-align:middle;
+}
+button{
+  padding: 0.7em;
+  background-color: black;
+  color: white;
+  border: none;
+  margin: 1em 0;
+  cursor: pointer;
+  display: block;
+  width: 15%;
+  font-size: 1.2em;
+  text-align: center;
+  float: right;
   
-  form h2 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-  }
-  
-  form label {
-    display: block;
-    margin-bottom: 10px;
-  }
-  
-  form input[type="text"],
-  form input[type="email"],
-  form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  form button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  form button:hover {
-    background-color: #0056b3;
-  }
+}
