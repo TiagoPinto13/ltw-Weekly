@@ -6,7 +6,7 @@ body > section > form {
     padding: 1em;
 }
 body {
-    grid-template-columns: 1fr; /* Altere para uma única coluna */
+    grid-template-columns: 1fr; 
     grid-template-areas: 
       "header"
       "menu"
@@ -36,7 +36,6 @@ body > section > form button {
     width: auto;
     background-color: black;
     color: white;
-
     border: none;
     margin: 1em;
     padding: 1em;

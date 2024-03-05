@@ -3,7 +3,7 @@
         display: none;
     }
     body {
-        grid-template-columns: 1fr; /* Altere para uma única coluna */
+        grid-template-columns: 1fr; 
         grid-template-areas: 
           "header"
           "menu"
@@ -40,10 +40,9 @@
     
     #menu ul {
         display: none;
-        
     }
     #menu ul li{
-        border-top: none;
+
         text-align: left;
         padding: 0.5em;
         
