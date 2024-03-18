@@ -1,0 +1,8 @@
+@media screen and (max-width: 40em) {
+    form{
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: blue;
+    }
+    
+}

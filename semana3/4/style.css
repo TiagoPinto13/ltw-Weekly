@@ -1,0 +1,89 @@
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:0 2.5em;
+    margin: 0 auto;
+}
+label{
+    display: flex;
+    flex-direction: column;
+    
+}
+form input,form select, form textarea{
+    padding: 1em 0;
+    border-radius: 0.5em;
+    border-color: #84CC16;
+    border-style: solid;
+}
+#register{
+    order:11;
+    grid-column-start: 3;
+    line-height: 2.5em;
+    color: white;
+    background-color: #84CC16;
+    border-color: #84CC16 ;
+    border-style: solid;
+    border-radius: 0.5em;
+    
+}
+input:placeholder-shown,textarea:placeholder-shown{
+    padding: 1em;
+
+}
+.required{
+    color: #DC2626;
+    
+}
+.required input{
+    background-color:  rgba(220, 38, 38, 0.3);
+    border-color: #DC2626;
+    
+}
+#fname{
+    order:1;
+    
+}
+#lname{
+    order: 2;
+}
+#username{
+    order: 3;
+}
+#email{
+    order:4;
+    grid-column-end: span 2;
+    
+}
+#password{
+    order:5;
+}
+#address{
+    order:6;
+    grid-column-end: span 3;
+}
+#country{
+    order:7;
+
+}
+
+#city{
+    order:8;
+}
+#zipcode{
+    order:9;
+}
+#bio{
+    order:10;
+    grid-column-end: span 3;
+}
+textarea{
+    height: 10em;
+}
+
+input,
+select,
+textarea {
+    width: 100%; 
+    margin-bottom: 1em; 
+}
+
